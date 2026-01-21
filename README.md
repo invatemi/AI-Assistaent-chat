@@ -3,7 +3,7 @@
 Современный чат-интерфейс с поддержкой **локальных AI-моделей**, историей переписок, streaming-генерацией и интуитивным UX.  
 Работает **без интернета** и **без API-ключей** благодаря [Ollama](https://ollama.com/).
 
-![AI Chat Screenshot](https://ibb.co/0jLK10YP)
+![AI Chat Screenshot]([https://ibb.co/0jLK10YP](https://sun9-83.userapi.com/s/v1/ig2/DimCRvw4RS-SoqwWpEEapfvzWk-NNKtNUpj8FUiBaOmfWAAn-3PXnqdvs9Ce-FVVqm7Ndy877Nbd2hbEeS7bgS2x.jpg?quality=95&as=32x23,48x35,72x52,108x78,160x116,240x174,360x261,480x348,540x391,640x464,720x522,1080x782,1280x927,1440x1043,1520x1101&from=bu&u=9ZfVFfmXIvaDGD0j08P-FIOK_MYGeYkupL9wNcWU5tw&cs=1520x0))
 
 ## ✨ Основные возможности
 
