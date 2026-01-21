@@ -3,7 +3,7 @@
 Современный чат-интерфейс с поддержкой **локальных AI-моделей**, историей переписок, streaming-генерацией и интуитивным UX.  
 Работает **без интернета** и **без API-ключей** благодаря [Ollama](https://ollama.com/).
 
-![AI Chat Screenshot]([https://placehold.co/800x400/e5e7eb/6b7280?text=AI+Chat+Interface](https://ibb.co/0jLK10YP))
+![AI Chat Screenshot](https://ibb.co/0jLK10YP)
 
 ## ✨ Основные возможности
 
