@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# 🧠 AI Chat Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современный чат-интерфейс с поддержкой **локальных AI-моделей**, историей переписок, streaming-генерацией и интуитивным UX.  
+Работает **без интернета** и **без API-ключей** благодаря [Ollama](https://ollama.com/).
 
-Currently, two official plugins are available:
+![AI Chat Screenshot](https://placehold.co/800x400/e5e7eb/6b7280?text=AI+Chat+Interface) <!-- Замените на реальный скриншот -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Основные возможности
 
-## React Compiler
+- **Локальная AI-модель** через Ollama (`phi3`, `llama3`, `mistral` и др.)
+- **Streaming-ответы** — текст появляется в реальном времени
+- **История чатов** с автозаголовками и удалением
+- **Остановка генерации** в любой момент
+- **Полное сохранение** истории между сессиями (localStorage)
+- **Модульная архитектура**: React + TypeScript + Zustand + Tailwind CSS
+- **Адаптивный дизайн** — работает на всех устройствах
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🛠️ Технологии
 
-## Expanding the ESLint configuration
+- **Frontend**: React 18, TypeScript, Vite
+- **State Management**: Zustand (с persist middleware)
+- **UI**: Tailwind CSS, собственные UI-компоненты (`Button`, `Card`, `Textarea`)
+- **AI Backend**: Ollama (локальный сервер на `http://localhost:11434`)
+- **Linting**: ESLint + TypeScript strict mode
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Быстрый запуск
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Установите зависимости
+```bash
+npm install
